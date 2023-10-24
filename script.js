@@ -41,33 +41,75 @@ for (let i = 0; i < data.acc.length; i++) {
 
 for (let i = 0; i < data.acc.length; i++) {
   p[i].textContent = data.acc[i].javob;
-  p[i].style.display = "none";
   icons2[i].style.display = "none";
 }
 
+// let son;
+// for (let i = 0; i < data.acc.length; i++) {
+//   icons[i].onclick = function () {
+//     p[i].style.display = "inline-block";
+//     icons[i].style.display = "none";
+//     son = i;
+//     icon[i].style.fontSize = "16px";
+//     icon[i].style.color = "#000";
+//     icon[i].style.fontWeight = "700";
+//     for (let i = 0; i < data.acc.length; i++) {
+//       if (son != i) {
+//         p[i].style.display = "none";
+//         icons2[i].style.display = "none";
+//         icons[i].style.display = "inline-block";
+//       }
+//     }
+//   };
+// }
+
+// for (let i = 0; i < data.acc.length; i++) {
+//   icons2[i].onclick = function () {
+//     p[i].style.display = "none";
+//     icons2[i].style.display = "none";
+//     icons[i].style.display = "inline-block";
+//     icon[i].style.fontSize = "16px";
+//     icon[i].style.color = "#47474c";
+//     icon[i].style.fontWeight = "500";
+//   };
+// }
+
 let son;
+
 for (let i = 0; i < data.acc.length; i++) {
   icons[i].onclick = function () {
-    p[i].style.display = "inline-block";
+    text_2[i].style.height = "120px";
+    text_2[i].style.transition = "all 0.4s";
     icons[i].style.display = "none";
     icons2[i].style.display = "inline-block";
     son = i;
     icon[i].style.fontSize = "16px";
     icon[i].style.color = "#000";
     icon[i].style.fontWeight = "700";
+
     for (let i = 0; i < data.acc.length; i++) {
       if (son != i) {
-        p[i].style.display = "none";
+        text_2[i].style.height = "40px";
+        text_2[i].style.transition = "all 0.4s";
         icons2[i].style.display = "none";
         icons[i].style.display = "inline-block";
+        icon[i].style.fontSize = "16px";
+        icon[i].style.color = "#47474c";
+        icon[i].style.fontWeight = "500";
       }
     }
   };
 }
 
+// max-height: 120px;
+//   -webkit-transition: all 0.4s;
+//   transition: all 0.4s;
+//   margin-bottom: 1rem;
+
 for (let i = 0; i < data.acc.length; i++) {
   icons2[i].onclick = function () {
-    p[i].style.display = "none";
+    text_2[i].style.height = "40px";
+    text_2[i].style.transition = "all 0.4s";
     icons2[i].style.display = "none";
     icons[i].style.display = "inline-block";
     icon[i].style.fontSize = "16px";
