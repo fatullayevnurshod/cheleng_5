@@ -32,8 +32,8 @@ let text_2 = document.querySelectorAll(".text_2");
 
 let icon = document.querySelectorAll(".text_2 .icon");
 let p = document.querySelectorAll("p");
-let icons = document.querySelectorAll(".fa-arrow-down");
-let icons2 = document.querySelectorAll(".fa-arrow-up");
+let icons = document.querySelectorAll(".fa-chevron-down");
+let icons2 = document.querySelectorAll(".fa-chevron-up");
 
 for (let i = 0; i < data.acc.length; i++) {
   icon[i].textContent = data.acc[i].savol;

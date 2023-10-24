@@ -56,8 +56,11 @@ body {
 
 .text_2 {
   width: 351px;
+  height: 40px;
+  margin: 16px 0 0;
   border-bottom: 1px solid #eaeaea;
-  padding: 16px 0 18px;
+  padding-bottom: 18px;
+  overflow: hidden;
 }
 
 h1 {
@@ -94,10 +97,10 @@ i {
   display: none;
 }
 .text_2 {
-  max-width: 351px;
+  /* max-width: 351px;
   height: 40px;
   margin: 16px 0 18px;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 @media (max-width: 1020px) {
